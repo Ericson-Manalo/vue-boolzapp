@@ -36,8 +36,30 @@ div .contact-items i{
 }
 
 div .notifications{
-    height: 70px;
+    height: 65px;
     background-color: #8edafc;
+}
+
+div .notifications i{
+    background-color: white;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    color: #8edafc;
+}
+
+div .notification-text p{
+    margin: 0;
+    font-size: .8rem;
+    margin-left: .6rem;
+}
+
+.active-notification{
+    color: grey;
+    text-decoration: none;
 }
 
 div .search-bar{
