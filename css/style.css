@@ -159,20 +159,20 @@ div .conversation-container{
     overflow: auto;
 }
 
-div .conversation-sender{
-    width: 75%;
-    margin: 2rem auto;
-    display: grid;
-    justify-content: end;
-}
-
+div .conversation-sender,
 div .conversation-recipient{
     width: 75%;
     margin: 2rem auto;
     display: grid;
-    justify-content: start;
 }
 
+div .conversation-sender{
+    justify-content: end;
+}
+
+div .conversation-recipient{
+    justify-content: start;
+}
 
 div .sender,
 div .recipient{
@@ -180,6 +180,21 @@ div .recipient{
     padding: 1rem 2rem;
     border-radius: 10px;
     font-size: .9rem;
+    position: relative;
+}
+
+div .recipient span{
+    font-size: .6rem;
+    justify-content: end;
+    position: absolute;
+    bottom: 2%;
+}
+
+div .sender span{
+    font-size: .6rem;
+    justify-content: end;
+    position: absolute;
+    bottom: 2%;
 }
 
 div .sender{
