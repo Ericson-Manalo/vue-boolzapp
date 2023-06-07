@@ -19,6 +19,16 @@ div .upper-contact{
     background-color: #eaeaea;
 }
 
+div .pic-name{
+    height: 100%;
+}
+
+div .pic-name img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
 div .notifications{
     height: 70px;
     background-color: #8edafc;
