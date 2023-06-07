@@ -29,6 +29,12 @@ div .pic-name img{
     border-radius: 50%;
 }
 
+div .contact-items i{
+    color: #b1b1b1;
+    font-size: medium;
+    margin-right: .7rem;
+}
+
 div .notifications{
     height: 70px;
     background-color: #8edafc;
