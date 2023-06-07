@@ -1,3 +1,7 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
 .main-container{
     width: 1100px;
     height: 700px;
@@ -6,7 +10,6 @@
     display: flex;
 }
 
-
 /*CONTACTS SIDE*/
 div .contact-column{
     width: 35%;
@@ -14,6 +17,7 @@ div .contact-column{
     background-color: orange;
 }
 
+/* PROFILE */
 div .upper-contact{
     height: 60px;
     background-color: #eaeaea;
@@ -35,6 +39,8 @@ div .contact-items i{
     margin-right: .7rem;
 }
 
+
+/*NOTIFICATIONS*/
 div .notifications{
     height: 65px;
     background-color: #8edafc;
@@ -62,9 +68,37 @@ div .notification-text p{
     text-decoration: none;
 }
 
-div .search-bar{
+
+/*SEARCH BAR*/
+div .my_searchbar_container{
     height: 40px;
     background-color: #eaeaea;
+}
+
+div .search-bar{
+    background-color: white;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+
+div .search-bar input{
+    display: flex;
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    font-size: .6rem;
+}
+
+/*MY CONTACTS*/
+div .contacts-container{
+    overflow: auto;
 }
 
 div .contacts{
@@ -72,10 +106,49 @@ div .contacts{
     background-color: white;
 }
 
-
-
+/*****************************CHAT************************/
 div .chat-side{
     width: 65%;
-    background-color: blue;
+    background-image: url("../img/mine.jpg");
     height: 100%;
+}
+
+div .chat-info{
+    height: 60px;
+    background-color: #eaeaea;
+    border-left: 1px grey solid;
+    padding-left: 1rem;
+}
+
+div .chatter-info img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+div .name-chatter p{
+    margin: 0;
+}
+
+.last-access{
+    font-size: .7rem;
+}
+
+div .chatter-items i{
+    color: #b1b1b1;
+    font-size: medium;
+    margin-right: 1rem;
+}
+
+div .conversation{
+    height: calc( 100% - 120px);
+    overflow: auto;
+}
+
+
+/* SEND MESSAGE */
+
+div .message-tosend{
+    height: 60px;
+    background-color: #f3eeea;
 }
