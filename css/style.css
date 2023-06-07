@@ -15,13 +15,23 @@ div .contact-column{
 }
 
 div .upper-contact{
-    height: 70px;
+    height: 60px;
     background-color: #eaeaea;
 }
 
 div .notifications{
-    height: 80px;
+    height: 70px;
     background-color: #8edafc;
+}
+
+div .search-bar{
+    height: 40px;
+    background-color: #eaeaea;
+}
+
+div .contacts{
+    height: 65px;
+    background-color: white;
 }
 
 
