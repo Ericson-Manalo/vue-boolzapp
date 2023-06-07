@@ -67,19 +67,24 @@
 
                     <!--MY CONTACTS-->
                     <div class="contacts-container">
-                        <div class="contacts">
-                            <div class="contact-img">
-                                <img src="" alt="">
-                            </div>
-                            <div class="contact-infos">
-
+                        <div class="contacts" v-for="contact in contacts">
+                            <div class="contact-img d-flex align-items-center h-100 ps-3">
+                                <img :src="contact.avatar" alt="My personal photo" class="me-1">
+                                <div class="contact-name d-flex flex-column ps-2">
+                                    <p class="m-0">
+                                        {{contact.name}}
+                                    </p>
+                                    <p class="last-access">
+                                        Ultimo accesso
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
 
-                <!--CHAT SIDE-->
+                <!--CHAT SIDE (right side)-->
                 <div class="chat-side">
 
                     <!-- CHATTING WITH -->
@@ -94,7 +99,6 @@
                                     Ultimo accesso
                                 </p>
                             </div>
-
                         </div>
                         <div class="chatter-items d-flex align-items-center">
                             <i class="fa-solid fa-circle-notch"></i>
