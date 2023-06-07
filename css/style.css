@@ -152,3 +152,15 @@ div .message-tosend{
     height: 60px;
     background-color: #f3eeea;
 }
+
+div .message-tosend input{
+    width: 80%;
+    border: none;
+    height: 80%;
+    border-radius: 10px;
+}
+
+div .message-tosend i{
+    font-size: 1.2rem;
+    color: #6a7275;
+}
