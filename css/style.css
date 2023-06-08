@@ -106,7 +106,7 @@ div .contacts{
 }
 
 div .contact-img.active{
-    background-color: #eaeaea;
+    background-color: #e9ebeb;
 }
 
 div .contacts:hover{
@@ -163,8 +163,7 @@ div .conversation-container{
     overflow: auto;
 }
 
-div .conversation-sender,
-div .conversation-recipient{
+div .conversation{
     width: 75%;
     margin: 2rem auto;
     display: grid;
@@ -175,7 +174,7 @@ div .conversation-sender{
 }
 
 div .conversation-recipient{
-    justify-content: start;
+
 }
 
 div .sender,
@@ -185,7 +184,17 @@ div .recipient{
     border-radius: 10px;
     font-size: .9rem;
     position: relative;
+    display: grid;
+    justify-content: end;
 }
+
+div .recipient{
+
+
+}
+
+
+
 
 div .recipient span{
     font-size: .6rem;
@@ -207,6 +216,7 @@ div .sender{
 
 div .recipient{
     background-color: #ffffff;
+    justify-content: start;
 }
 
 
