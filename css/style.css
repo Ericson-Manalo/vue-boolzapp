@@ -105,6 +105,10 @@ div .contacts{
     border-bottom: 1px rgb(234, 234, 234) solid;
 }
 
+div .contact-img.active{
+    background-color: #eaeaea;
+}
+
 div .contacts:hover{
     height: 65px;
     background-color: #e9ebeb;
