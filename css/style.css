@@ -169,30 +169,33 @@ div .conversation{
     display: grid;
 }
 
-div .conversation-sender{
-    justify-content: end;
-}
-
-div .conversation-recipient{
-
-}
-
-div .sender,
-div .recipient{
+div .sender{
     margin-bottom: 1rem;
-    padding: 1rem 2rem;
-    border-radius: 10px;
     font-size: .9rem;
     position: relative;
     display: grid;
     justify-content: end;
 }
 
-div .recipient{
-
-
+div .sender div{
+    background-color: #d5f9ba;
+    padding: 1rem 1.8rem;
+    border-radius: 10px;
 }
 
+div .recipient{
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    position: relative;
+    display: grid;
+    justify-content: start;
+}
+
+div .recipient div{
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
 
 
 
@@ -210,14 +213,6 @@ div .sender span{
     bottom: 2%;
 }
 
-div .sender{
-    background-color: #d5f9ba;
-}
-
-div .recipient{
-    background-color: #ffffff;
-    justify-content: start;
-}
 
 
 /* SEND MESSAGE */

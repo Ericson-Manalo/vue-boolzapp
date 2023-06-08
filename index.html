@@ -109,11 +109,11 @@
 
 
                     <!--CONVERSATION-->
-                    <div class="conversation-container" >
+                    <div class="conversation-container">
 
                         <!--sender-->
                         <div class="conversation">
-                            <div v-for="message in contacts[activeIndex].messages" :class="message.status === 'sent' ? 'sender' : 'recipient'" >  
+                            <div v-for="message in contacts[activeIndex].messages" :class="message.status === 'sent' ? 'sender' : 'recipient'">  
                                 <div>
                                     {{message.message}}
                                     <span>
