@@ -21,7 +21,7 @@
     <script src="https://unpkg.com/vue@3"></script>
 
     <div id="app">
-        <main>
+        <main> 
             <div class="main-container">
 
                 <!--CONTACT'S COLUMN-->
@@ -67,8 +67,8 @@
 
                     <!--MY CONTACTS-->
                     <div class="contacts-container">
-                        <div class="contacts" v-for="contact in contacts">
-                            <div class="contact-img d-flex align-items-center h-100 ps-3">
+                        <div class="contacts" v-for="(contact, index) in contacts" @click="goToChat(index)">
+                            <div class="contact-img d-flex align-items-center h-100 ps-3" :class="index === activeIndex ? 'active' : ''">
                                 <img :src="contact.avatar" alt="My personal photo" class="me-1">
                                 <div class="contact-name d-flex flex-column ps-2">
                                     <p class="m-0">
@@ -87,7 +87,7 @@
                 <!--CHAT SIDE (right side)-->
                 <div class="chat-side">
 
-                    <!-- CHATTING WITH -->
+                    <!-- CHATTING WITH INFO-->
                     <div class="chat-info d-flex justify-content-between">
                         <div class="chatter-info d-flex align-items-center h-100">
                             <img src="./img/avatar_io.jpg" alt="My personal photo" class="me-1">
@@ -112,9 +112,11 @@
                     <div class="conversation-container">
 
                         <!--sender-->
-                        <div class="conversation-sender">
+                        <div class="conversation-sender" v-for="(message, index) in messages">
                             <div class="sender">
-                                123waarar22ar
+                                <p>
+                                    {{message[index].message}}
+                                </p>
                                 <span>
                                     10:00
                                 </span>
