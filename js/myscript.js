@@ -186,6 +186,7 @@ createApp({
     activeIndex : 0,
     userMessage : "",
     searchContact: "",
+    time: "",
 
         }
     },
@@ -220,6 +221,16 @@ createApp({
 
             this.contacts[this.activeIndex].messages.push(contactAnsw);
         },
+
+        getTime(){
+            const hours = this.contacts[this.activeIndex].messages.date.getHours();
+
+            const minutes = this.contacts[this.activeIndex].messages.date.getMinutes();
+            
+            const timeMessage = hours + minutes;
+            this.time = timeMessage;
+            
+        }
 
 
 
