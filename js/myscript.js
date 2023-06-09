@@ -208,7 +208,7 @@ createApp({
             this.userMessage='';
 
             setTimeout(() =>{
-                this.contactAnswer()
+                this.contactAnswer(this.activeIndex)
             }, 1000);
 
         },
