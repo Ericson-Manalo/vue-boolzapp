@@ -90,10 +90,10 @@
                     <!-- CHATTING WITH INFO-->
                     <div class="chat-info d-flex justify-content-between">
                         <div class="chatter-info d-flex align-items-center h-100">
-                            <img src="./img/avatar_io.jpg" alt="My personal photo" class="me-1">
+                            <img :src="contacts[activeIndex].avatar" alt="My personal photo" class="me-1">
                             <div class="name-chatter d-flex flex-column">
                                 <p class="m-0">
-                                    Michele
+                                    {{contacts[activeIndex].name}}
                                 </p>
                                 <p class="last-access">
                                     Ultimo accesso
@@ -132,7 +132,7 @@
                     <div class="message-tosend d-flex align-items-center justify-content-around">
                         <i class="fa-regular fa-face-smile h-100 d-flex align-items-center"></i>
 
-                        <input type="text" placeholder="Scrivi un messaggio">
+                        <input type="text" v-model="newMessage" @keyup.enter="toSendNewMessage" placeholder="Scrivi un messaggio">
 
                         <i class="fa-solid fa-microphone h-100 d-flex align-items-center"></i>
                     </div>
