@@ -68,7 +68,7 @@
                     <!--MY CONTACTS-->
                     <div class="contacts-container">
                         <div class="contacts" v-for="(contact, index) in contacts" >
-                            <div class="contact-img d-flex align-items-center h-100 ps-3" :class="index === activeIndex ? 'active' : ''" @click="goToChat(index)" v-if="contact.name.includes(searchContact)">
+                            <div class="contact-img d-flex align-items-center h-100 ps-3" :class="index === activeIndex ? 'active' : ''" @click="goToChat(index)" v-if="contact.name.toLowerCase().includes(searchContact.toLowerCase())">
                                 <img :src="contact.avatar" alt="My personal photo" class="me-1">
                                 <div class="contact-name d-flex flex-column ps-2">
                                     <p class="m-0">
