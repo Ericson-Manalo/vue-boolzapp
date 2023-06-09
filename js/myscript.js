@@ -187,7 +187,7 @@ createApp({
         }
     ],
     activeIndex : 0,
-    newMessage : '',
+    userMessage : "",
 
         }
     },
@@ -199,13 +199,18 @@ createApp({
         toSendNewMessage(){
             const userMessage={
                 date: '08/06/2023 20:20:00',
-                message: this.newMessage,
+                message: this.userMessage,
                 status: 'sent'
             }
-            if (newMessage.message != 0){
-                this.contacts[0].messages.push(userMessage);
+            if (userMessage.message != 0){
+                this.contacts[this.activeIndex].messages.push(userMessage);
             }
             this.userMessage='';
+
+            setTimeout(() =>{
+                this.contactAnswer()
+            }, 1000);
+
         },
 
         contactAnswer(){
@@ -214,6 +219,12 @@ createApp({
                 message: 'ok',
                 status: 'received'
             };
+
+            this.contacts[this.activeIndex].messages.push(contactAnsw);
+
+
+
+
         }
 
     
