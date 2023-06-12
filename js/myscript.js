@@ -229,7 +229,7 @@ createApp({
             
             const timeMessage = hours + minutes;
             this.time = timeMessage;
-            
+            return time;
         }
 
 

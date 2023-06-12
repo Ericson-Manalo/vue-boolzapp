@@ -65,7 +65,7 @@
                         </div>
                     </div>
 
-                    <!--MY CONTACTS-->
+                    <!--MY CONTACT LIST-->
                     <div class="contacts-container">
                         <div class="contacts" v-for="(contact, index) in contacts" >
                             <div class="contact-img d-flex align-items-center h-100 ps-3" :class="index === activeIndex ? 'active' : ''" @click="goToChat(index)" v-if="contact.name.toLowerCase().includes(searchContact.toLowerCase())">
@@ -75,7 +75,7 @@
                                         {{contact.name}}
                                     </p>
                                     <p class="last-access">
-                                        Ultimo accesso {{time}}
+                                        Ultimo accesso
                                     </p>
                                 </div>
                             </div>
@@ -95,8 +95,8 @@
                                 <p class="m-0">
                                     {{contacts[activeIndex].name}}
                                 </p>
-                                <p class="last-access">
-                                    Ultimo accesso
+                                <p class="last-access" v-for="time in contacts[activeIndex].messages">
+                                    Ultimo accesso {{time.date}}
                                 </p>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                                 <div>
                                     {{message.message}}
                                     <span>
-                                        {{time}}
+                                        {{message.date}}
                                     </span>
                                 </div>
 
